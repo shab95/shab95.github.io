@@ -160,7 +160,7 @@ module.exports = [
   css,
   sass,
   less,
-  images,
+  //mages,
   fonts,
   videos,
 ];
