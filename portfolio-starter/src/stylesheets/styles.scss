@@ -147,3 +147,42 @@ nav ul li a:hover::after {
   grid-gap: 40px;
   margin-top: 50px;
 }
+
+.experience-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 40px;
+
+  /* box-shadow: 3px 5px 5px red; */
+  transition: background 0.5s, transform 0.5s;
+}
+
+.experience-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.experience-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.experience-list div:hover {
+  background-color: #ff004f;
+  transform: translateY(-10px);
+}
+
+#experience img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#arc {
+  padding: 11% 0;
+}
