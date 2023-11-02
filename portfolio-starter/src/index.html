@@ -29,6 +29,7 @@
       </div>
     </div>
 
+    <!-- about start -->
     <div>
       <div id="about">
         <div class="container">
@@ -42,15 +43,54 @@
                 I'm a senior at the Univeristy of Maryland studying computer
                 science.
               </p>
+              <script src="./javascripts/index.js"></script>
               <div class="tab-titles">
-                <p class="tab-links">Skills</p>
-                <p class="tab-links">Experience</p>
-                <p class="tab-links">Education</p>
+                <p
+                  class="tab-links active-link"
+                  onclick="openAboutTabs('skills')"
+                >
+                  Skills
+                </p>
+                <p class="tab-links" onclick="openAboutTabs('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="openAboutTabs('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                  <li><span>Web Dev</span><br />Web Dev</li>
+                  <li><span>App Dev</span><br />App Dev</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2022-2023</span><br />Nothing</li>
+                  <li><span>2021-2022</span><br />School</li>
+                  <li><span>2020-2021</span><br />FA</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2020-2024</span><br />uMd</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- about end -->
+
+    <!-- new section starts here -->
+    <div id="Experience">
+      <div class="container">
+        <div class="sub-title">Experience</div>
+        <div class="experience-list"><</div>
+      </div>
+    </div>
+    <script src="./javascripts/index.js"></script>
   </body>
 </html>

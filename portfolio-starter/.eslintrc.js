@@ -7,5 +7,7 @@ module.exports = {
   rules: {
     "no-console": "off",
     "linebreak-style": 0,
+    "no-param-reassign": [2, { props: false }],
+    "no-unused-vars": "off",
   },
 };
