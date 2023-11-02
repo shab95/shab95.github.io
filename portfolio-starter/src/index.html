@@ -5,6 +5,10 @@
     <title>Shabarish's Portfolio Page</title>
     <meta name="description" content="" />
     <link rel="stylesheet" href="stylesheets/styles.scss" />
+    <script
+      src="https://kit.fontawesome.com/6abef47e07.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="header">
@@ -13,11 +17,11 @@
           <!-- <img id="logo" src="images/logo.png"/> -->
           <h1 id="logo">Shabarish Nair</h1>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">School and Classes</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Hobbies</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="">School and Classes</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
@@ -84,7 +88,7 @@
     </div>
     <!-- about end -->
 
-    <!-- new section starts here -->
+    <!-- experience starts here -->
     <div id="experience">
       <div class="container">
         <div class="sub-title">Experience</div>
@@ -110,6 +114,50 @@
         </div>
       </div>
     </div>
+    <!-- experience section ends here  -->
+
+    <!-- contact form starts here  -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i> shabarishnair2020@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 301-873-5872</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/shabarish-nair2020/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/Shabarish Nair Resume.pdf" download class="btn"
+              >Download Resumé</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-form" action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                cols="30"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="status"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./javascripts/index.js"></script>
   </body>
 </html>
