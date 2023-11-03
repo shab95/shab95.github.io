@@ -136,6 +136,16 @@ nav ul li a:hover::after {
   display: block;
 }
 
+#language-list {
+  display: flex;
+  flex-direction: row;
+}
+
+#inside-bullets {
+  font-size: small;
+  margin-right: 10px;
+}
+
 /* EXPERIENCE CSS */
 
 #experience {
@@ -168,7 +178,7 @@ nav ul li a:hover::after {
 
 .experience-list div a {
   text-decoration: none;
-  color: #fff;
+  color: #0f3;
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
@@ -186,6 +196,10 @@ nav ul li a:hover::after {
 
 #arc {
   padding: 11% 0;
+}
+
+#experience p {
+  color: white;
 }
 
 /* experience section done here */

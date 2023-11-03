@@ -21,7 +21,6 @@
           <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="">School and Classes</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -36,53 +35,83 @@
     </div>
 
     <!-- about start -->
-    <div>
-      <div id="about">
-        <div class="container">
-          <div class="row">
-            <div class="about-col-1">
-              <img src="./images/favicon.png" />
-            </div>
-            <div class="about-col-2">
-              <h1 class="sub-title">About Me</h1>
-              <p>
-                I'm a senior at the Univeristy of Maryland studying computer
-                science.
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/terp.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a senior at the Univeristy of Maryland studying computer
+              science.
+            </p>
+            <script src="./javascripts/index.js"></script>
+            <div class="tab-titles">
+              <p
+                name = "skills"
+                class="tab-links active-link"
+                onclick="openAboutTabs('skills')"
+              >
+                Skills
               </p>
-              <script src="./javascripts/index.js"></script>
-              <div class="tab-titles">
-                <p
-                  class="tab-links active-link"
-                  onclick="openAboutTabs('skills')"
-                >
-                  Skills
-                </p>
-                <p class="tab-links" onclick="openAboutTabs('experience')">
-                  Experience
-                </p>
-                <p class="tab-links" onclick="openAboutTabs('education')">
-                  Education
-                </p>
-              </div>
-              <div class="tab-contents active-tab" id="skills">
-                <ul>
-                  <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
-                  <li><span>Web Dev</span><br />Web Dev</li>
-                  <li><span>App Dev</span><br />App Dev</li>
-                </ul>
-              </div>
-              <div class="tab-contents" id="experience">
-                <ul>
-                  <li><span>2022-2023</span><br />Nothing</li>
-                  <li><span>2021-2022</span><br />School</li>
-                  <li><span>2020-2021</span><br />FA</li>
-                </ul>
-              </div>
-              <div class="tab-contents" id="education">
-                <ul>
-                  <li><span>2020-2024</span><br />uMd</li>
-                </ul>
-              </div>
+              <p name="education" class="tab-links" onclick="openAboutTabs('education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li ><span>Lanugages</span><br /><ul id="language-list">
+                  <li id="inside-bullets">JavaScript</li>
+                  <li id="inside-bullets">Python</li>
+                  <li id="inside-bullets">Java</li>
+                  <li id="inside-bullets">Go</li>
+                  <li id="inside-bullets">CSS</li>
+                  <li id="inside-bullets">Ruby</li>
+                  <li id="inside-bullets">C</li>
+                  <li id="inside-bullets">OCaml</li>
+                </ul></li>
+                <li><span>Frameworks</span><br /><ul id="language-list">
+                  <li id="inside-bullets">React</li>
+                  <li id="inside-bullets">Angular</li>
+                  <li id="inside-bullets">ExpressJS</li>
+                  <li id="inside-bullets">Node.js</li>
+                  <li id="inside-bullets">Jasmine</li>
+                  <li id="inside-bullets">Karma</li>
+                  <li id="inside-bullets">JUnit</li>
+                </ul></li>
+                <li><span>Developer Tools</span><br /><ul id="language-list">
+                  <li id="inside-bullets">Git</li>
+                  <li id="inside-bullets">Postman</li>
+                  <li id="inside-bullets">VS Code</li>
+                  <li id="inside-bullets">MongoDB</li>
+                  <li id="inside-bullets">Firebase</li>
+                  <li id="inside-bullets">AWS EC2</li>
+                  <li id="inside-bullets">Google Cloud Platform</li>
+                  <li id="inside-bullets">Docker</li>
+                </ul></li>
+                <li><span>Libraries</span><br /><ul id="language-list">
+                  <li id="inside-bullets">pandas</li>
+                  <li id="inside-bullets">NumPy</li>
+                  <li id="inside-bullets">Matplotlib</li>
+                  <li id="inside-bullets">sci-kit learn</li>
+                  <li id="inside-bullets">seaborn</li>
+                  <li id="inside-bullets">statsmodels</li>
+                </ul></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>University of Maryland, College Park</span><br /><ul id="language-list">
+                  <li id="inside-bullets">
+                    Bachelor of Science in Computer Science</li>
+                  <li style="color: #0f3" id="inside-bullets">
+                    GPA: 0.0</li>
+                  <li style="color: rgb(255, 145, 0)" id="inside-bullets">
+                    Aug. 2020 - May 2024 </li>
+                </ul></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -97,21 +126,28 @@
         <div class="experience-list">
           <div>
             <img src="./images/Capital-One-Logo.png" />
-            <h2>Recent Experience</h2>
-            <p>Description Here</p>
-            <a href="#">code is here</a>
+            <h2>Technology Internship Program</h2>
+            <p>
+              idk why they hired me
+            </p>
+            <a href="#">June 2023 - Aug. 2023</a>
           </div>
           <div>
             <img id="arc" src="./images/arc-wiki.png" />
-            <h2>Third Recent Experience</h2>
-            <p>Description Here</p>
-            <a href="#">code is here</a>
+            <h2>Data Science Consultant</h2>
+            <p>
+              stuff
+            </p>
+            <a href="#">Sept. 2022 - Dec. 2022</a>
           </div>
           <div>
             <img src="./images/Siemens-logo-1000.png" />
-            <h2>Second Recent Experience</h2>
-            <p>Description Here</p>
-            <a href="#">code is here</a>
+            <h2>Software Developer Intern</h2>
+            <p>
+              i did nothing 
+            </p>
+              <a href="#">May 2022 - Aug. 2022</a>
+            </p>
           </div>
         </div>
       </div>

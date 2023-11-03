@@ -1,6 +1,25 @@
 const TabLinks = document.getElementsByClassName('tab-links')
 const TabContents = document.getElementsByClassName('tab-contents')
 
+const skillsTab = document.getElementsByName('skills')[0]
+const skillsP = document.getElementById('skills')
+const eduTab = document.getElementsByName('education')[0]
+const eduP = document.getElementById('education')
+
+skillsTab.addEventListener('click', () => {
+  skillsTab.className = 'tab-links active-link'
+  eduTab.className = 'tab-links'
+  skillsP.className = 'tab-contents active-tab'
+  eduP.className = 'tab-contents'
+})
+
+eduTab.addEventListener('click', () => {
+  skillsTab.className = 'tab-links'
+  eduTab.className = 'tab-links active-link'
+  skillsP.className = 'tab-contents'
+  eduP.className = 'tab-contents active-tab'
+})
+
 function openAboutTabs (tab) { // eslint-disable-line no-unused-vars
   for (let i = 0; i < TabLinks.length; i += 1) {
     const element = TabLinks[i]
